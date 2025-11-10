@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio - Home</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">My Portfolio</a>
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="biodata.html">Bio-data</a>
+        <button id="themeToggle" class="btn small">🌗 Theme</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero card elevate">
+      <div>
+        <h1>Hello, I'm <span class="accent">Jeethesha M</span></h1>
+        <p class="muted">
+          A passionate <strong>Computer Science student</strong> who enjoys building clean and simple web experiences.
+          This is a minimal multi‑page website created for an assignment using <strong>HTML</strong>, <strong>CSS</strong>,
+          and a little <strong>jQuery/JavaScript</strong>.
+        </p>
+        <div class="chip-row">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">jQuery</span>
+        </div>
+        <div class="actions">
+          <a class="btn" href="resume.html">View Resume →</a>
+          <a class="btn ghost" href="biodata.html">View Bio‑data →</a>
+        </div>
+      </div>
+      <!-- <img class="hero-img" alt="Illustration" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop" /> -->
+    </section>
+
+    <section id="about" class="grid-2 gap">
+      <div class="card elevate">
+        <h2>About this website</h2>
+        
+        <ul class="tick">
+          <li>Multi‑page: <em>Home, Resume, Bio‑data</em></li>
+          <li>Responsive layout with clean typography</li>
+          <li>Reusable components: cards, chips, buttons</li>
+          <li>Accessible HTML (landmarks, alt text, labels)</li>
+        </ul>
+      </div>
+      <div class="card elevate">
+        <h2>Quick Contact</h2>
+        
+        <div class="list">
+          <div><strong>Email:</strong> jeethesham2005@.com</div>
+          <div><strong>Phone:</strong> +91 9535973765</div>
+          <div><strong>Location:</strong> Bengaluru, India</div>
+          <div><strong>LinkedIn:</strong> linkedin.com/in/Jeethesha M</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Jeethesha M — portfolio Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // jQuery
+    $(document).on('click', 'a[href^="#"]', function(e){
+      e.preventDefault();
+      const id = $(this).attr('href');
+      $('html, body').animate({scrollTop: $(id).offset().top - 72}, 50);
+    });
+  </script>
+</body>
+</html>

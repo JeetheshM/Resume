@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">My Portfolio</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="resume.html">Resume</a>
+        <a href="biodata.html">Bio-data</a>
+        <button id="themeToggle" class="btn small">🌗 Theme</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <section class="card elevate">
+      <h1>Resume</h1>
+      <p class="muted">Jeethesha M</p>
+      <div class="resume-grid">
+        <div>
+          <h2>Education</h2>
+          <ul class="timeline">
+            <li>
+              <div class="when">2023 — Present</div>
+              <div class="what"><strong>B.E. in Computer Science</strong>, R V Institute of Technology And Management</div>
+              <div class="desc">CGPA: 8.78 • Coursework: DSA, DBMS, OS, Web Dev</div>
+            </li>
+            <li>
+              <div class="when">2021 — 2023</div>
+              <div class="what"><strong>PUC (Science)</strong></div>
+              <div class="desc">Percentage: 95%</div>
+            </li>
+          </ul>
+
+          <h2>Projects</h2>
+          <ul class="bullets">
+            <li><strong>Time Table Scheduler</strong> — A mini web portal to create time table and edit across departments.</li>
+            <li><strong>DO AS I Do</strong> — A simple memory game.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Skills</h2>
+          <div class="chip-row">
+            <span class="chip">C</span><span class="chip">Java</span><span class="chip">Python</span>
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span>
+            <span class="chip">SQL</span>
+          </div>
+
+          <h2>Achievements</h2>
+          <ul class="bullets">
+            <li> (Smart India Hackathon 2024 – College round)</li>
+            <li>Top 10 in Coding Club leaderboard</li>
+          </ul>
+
+          <h2>Interests</h2>
+          <ul class="bullets">
+            <li>Web development, UI design, Open‑source</li>
+            <li>cricket, Reading books</li>
+          </ul>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="biodata.html">Go to Bio‑data →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Jeethesha M — resume Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
